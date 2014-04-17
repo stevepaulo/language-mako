@@ -1,3 +1,5 @@
-# language-mako package
+# Mako template plugin
 
-A short description of your package.
+A Mako template plugin for Atom. Converted from [mako-tmbundle](https://github.com/marconi/mako-tmbundle) by
+[marconi](https://github.com/marconi).
+
