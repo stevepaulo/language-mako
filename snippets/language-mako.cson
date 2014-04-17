@@ -1,0 +1,22 @@
+'.text.html.mako':
+  '<%block> .. (block)':
+    'prefix': 'block'
+    'body': '<%block name="${1:name}">\n  $2\n</%block>'
+  '<%call..> .. (call)':
+    'prefix': 'call'
+    'body': '<%call expr="${1:expression}">\n$2\n</%call>'
+  '<%def> .. (def)':
+    'prefix': 'def'
+    'body': '<%def name="${1:name}(${2:args})">\n$3\n</%def>'
+  '<%include> .. (include)':
+    'prefix': 'include'
+    'body': '<%include file="${1:filename.html}"/>'
+  '<%inherit> .. (inherit)':
+    'prefix': 'inherit'
+    'body': '<%inherit file="${1:filename.html}"/>\t'
+  '<%names.. import> .. (nsi)':
+    'prefix': 'nsi'
+    'body': '<%namespace file="${1:filename.html}" import="${2:names}"/>'
+  '<%names.. name> .. (nsn)':
+    'prefix': 'nsn'
+    'body': '<%namespace name="${1:localname}" file="${2:filename.html}"/>'
