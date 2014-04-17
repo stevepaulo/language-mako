@@ -1,12 +1,11 @@
 {
   "name": "language-mako",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Mako template plugin for Atom",
   "repository": "https://github.com/stevepaulo/language-mako",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
