@@ -7,7 +7,7 @@
 'name': 'HTML (Mako)'
 'patterns': [
   {
-    'begin': '(<%) '
+    'begin': '(<%)'
     'captures':
       '1':
         'name': 'keyword.control'
