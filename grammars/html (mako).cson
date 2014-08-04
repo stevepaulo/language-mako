@@ -7,19 +7,6 @@
 'name': 'HTML (Mako)'
 'patterns': [
   {
-    'begin': '(<%)'
-    'captures':
-      '1':
-        'name': 'keyword.control'
-    'end': '(%>)'
-    'name': 'source.mako.substitution'
-    'patterns': [
-      {
-        'include': 'source.python'
-      }
-    ]
-  }
-  {
     'begin': '(<%(text)>)'
     'captures':
       '1':
@@ -284,6 +271,19 @@
       }
       {
         'include': '#tag-stuff'
+      }
+    ]
+  }
+  {
+    'begin': '(<%)'
+    'captures':
+      '1':
+        'name': 'keyword.control'
+    'end': '(%>)'
+    'name': 'source.mako.substitution'
+    'patterns': [
+      {
+        'include': 'source.python'
       }
     ]
   }
