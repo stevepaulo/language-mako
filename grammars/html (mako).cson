@@ -288,6 +288,16 @@
     ]
   }
   {
+    'begin': '^.*<%doc>'
+    'end': '</%doc>'
+    'name': 'comment.block.mako'
+  }
+  {
+    'begin': '^([ \\t]+)?(?=##)'
+    'end': '\\n'
+    'name': 'comment.line.mako'
+  }
+  {
     'include': 'text.html.basic'
   }
 ]
