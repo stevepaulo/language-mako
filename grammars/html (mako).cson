@@ -229,7 +229,7 @@
     ]
   }
   {
-    'begin': '(<%([a-zA-Z:_]+))'
+    'begin': '(<%([a-zA-Z0-9:_]+))'
     'captures':
       '1':
         'name': 'keyword.control'
@@ -262,7 +262,7 @@
         'captures':
           '1':
             'name': 'keyword.control'
-        'end': '(?=</%[a-zA-Z:_]+>)'
+        'end': '(?=</%[a-zA-Z0-9:_]+>)'
         'patterns': [
           {
             'include': '$self'
