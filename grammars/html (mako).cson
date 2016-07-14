@@ -59,7 +59,7 @@
     ]
   }
   {
-    'begin': '^(#)'
+    'begin': '^(#)(?!#)'
     'beginCaptures':
       '1':
         'name': 'keyword.control'
